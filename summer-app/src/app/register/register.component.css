@@ -1,0 +1,15 @@
+
+.cc{
+  background-color: #238ae6;
+   display: grid;
+ grid-template-rows: 1fr ;
+ }
+.container{
+  margin-top: 7%;
+  margin-bottom: 10%;
+
+ }
+.btnn
+{
+ text-align: center;
+}

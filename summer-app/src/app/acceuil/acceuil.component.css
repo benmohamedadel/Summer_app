@@ -1,0 +1,268 @@
+
+.conta{
+  display: grid;
+  grid-template-areas:
+  "side main main"
+  "side footer footer"
+  ;
+  grid-template-columns: 0%;
+  grid-template-rows:5fr 1fr ;
+  }
+
+
+  * {
+    box-sizing: border-box;
+  }
+
+
+  .control{
+
+      outline: none ;
+  }
+
+
+  .content{
+overflow: hidden;
+
+
+background-image: url(../img/1263.jpg);
+  grid-area: main;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100%;
+  animation: change_backg 20s infinite;
+  text-align: center;
+  position: relative;
+
+  }
+.prof{
+margin-right: 2%;
+
+}
+.logo{
+  margin-left: 2%;
+}
+  .navbar{
+ width: 100%;
+    position: absolute;
+
+
+    z-index: 10;
+  }
+  .pag2{
+    display: flex;
+    position: absolute;
+   background-color: black;
+   height: 25%;
+   width: 100%;
+    top: 50%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items:center;
+    align-content: center;
+    opacity: 0.8;
+
+
+
+  }
+  .circle{
+   display: flex;
+   flex-direction: column;
+    border-radius: 300px;
+
+    margin: 63px;
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    padding: 27px;
+    position: relative;
+    opacity: 0.7;
+    border: solid 2px white;
+
+     animation: circ 5s 5 ;
+
+  }
+  .circle:hover{
+    background-color: #238ae6;
+  }
+.txt-cir{
+margin-top: 55px;
+    color: white;
+
+    font-size: 20px;
+}
+.txt-num{
+  font-size: 20px;
+  font-weight: bolt;
+  color: white;
+}
+.txt{
+  position: absolute;
+  top: 25%;
+  left: 30%;
+ font-weight: bold;
+font-size: 40px;
+
+}
+
+ .buttom{
+  background-color: #238ae6;
+  border-radius: 20px;
+  font-size: 18px;
+  padding: 10px 24px;
+  }
+
+  a{
+    text-decoration: none;
+    color: white;
+
+  }
+  .footer-dark
+  {
+    grid-area: footer;
+    background-color: green;
+  }
+  li:hover
+  {
+
+    font-weight: bold;
+
+  }
+  .courses
+  {background-color: black;
+    width: 10%;
+    height: 20%;
+    position: absolute;
+    margin-left: 20%;
+    margin-top: 7%;
+
+
+  }
+
+
+    .footer-dark {
+      padding:50px 0;
+      color:#f0f9ff;
+      background-color:#238ae6;
+    }
+
+    .footer-dark h3 {
+      margin-top:0;
+      margin-bottom:12px;
+      font-weight:bold;
+      font-size:16px;
+    }
+
+    .footer-dark ul {
+      padding:0;
+      list-style:none;
+      line-height:1.6;
+      font-size:14px;
+      margin-bottom:0;
+    }
+
+    .footer-dark ul a {
+      color:inherit;
+      text-decoration:none;
+      opacity:0.6;
+    }
+
+    .footer-dark ul a:hover {
+      opacity:0.8;
+    }
+
+    @media (max-width:767px) {
+      .footer-dark .item:not(.social) {
+        text-align:center;
+        padding-bottom:20px;
+      }
+    }
+
+    .footer-dark .item.text {
+      margin-bottom:36px;
+    }
+
+    @media (max-width:767px) {
+      .footer-dark .item.text {
+        margin-bottom:0;
+      }
+    }
+
+    .footer-dark .item.text p {
+      opacity:0.6;
+      margin-bottom:0;
+    }
+
+    .footer-dark .item.social {
+      text-align:center;
+    }
+
+    @media (max-width:991px) {
+      .footer-dark .item.social {
+        text-align:center;
+        margin-top:20px;
+      }
+    }
+
+    .footer-dark .item.social > a {
+      font-size:20px;
+      width:36px;
+      height:36px;
+      line-height:36px;
+      display:inline-block;
+      text-align:center;
+      border-radius:50%;
+      box-shadow:0 0 0 1px rgba(255,255,255,0.4);
+      margin:0 8px;
+      color:#fff;
+      opacity:0.75;
+    }
+
+    .footer-dark .item.social > a:hover {
+      opacity:0.9;
+    }
+
+    .footer-dark .copyright {
+      text-align:center;
+      padding-top:24px;
+      opacity:0.3;
+      font-size:13px;
+      margin-bottom:0;
+    }
+
+@keyframes change_backg{
+
+ 0%{
+
+background-image: url(../img/1263.jpg);
+}
+  30%{
+
+    background-image: url(../img/1.webp);
+  }
+  60%{
+    background-image: url(../img/learn-36534301920.jpg);}
+    100%{
+      background-image: url(../img/1263.jpg);}
+}
+
+/* Small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
