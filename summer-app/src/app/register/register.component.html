@@ -36,7 +36,7 @@
                                         <input type="password" class="form-control form-control-user"
                                             id="exampleRepeatPassword" placeholder="Repeat Password">
                                     </div>
-                                    <select class="form-select mt-4 my-2" aria-label="Default select example">
+                                    <select class="form-select mt-4 my-2 mb-3" aria-label="Default select example">
                                       <option selected>Level</option>
                                       <option value="1">1er année secondaire</option>
                                       <option value="1">2er année secondaire</option>
@@ -45,7 +45,7 @@
 
                                     </select>
                                 </div>
-<div class="btnn">  <a  class="btn btn-primary btn-user btn-block my-2"  >
+<div  class="div-btn">  <a class="btnn" >
   Register Account
 </a></div>
 
@@ -57,7 +57,7 @@
                                 <a class="small" >Forgot Password?</a>
                             </div>
                             <div class="text-center">
-                                <a class="small" >Already have an account? Login!</a>
+                                <a class="small"   [routerLink]="['/login']" >Already have an account? Login!</a>
                             </div>
                         </div>
                     </div>

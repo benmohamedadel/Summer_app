@@ -11,5 +11,21 @@
  }
 .btnn
 {
- text-align: center;
+
+
+  text-decoration: none;
+  color: white;
+
+
 }
+.div-btn{
+  padding: 5px 30px 5px 30px;
+  display:flex;
+  border-radius: 25px;
+  background-color: #238ae6;
+  flex-wrap: none;
+justify-content: center;
+
+
+}
+
