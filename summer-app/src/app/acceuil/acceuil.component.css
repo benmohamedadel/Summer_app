@@ -2,12 +2,14 @@
 .conta{
   display: grid;
   grid-template-areas:
-  "side main main"
-  "side footer footer"
-  ;
-  grid-template-columns: 0%;
-  grid-template-rows:5fr 1fr ;
-  }
+   'header '
+   'page1 '
+   'page2  '
+   'footer ' ;
+  grid-template-columns: 100%;
+  grid-template-rows:74px 2041px 741px 1fr;  }
+
+
 
 
   * {
@@ -22,24 +24,26 @@
 
 .prof{
   margin-top: 10px;
-  background-color: #238ae6;
+  background-color: #ffc107;
   border-radius: 24px;
   padding: 5px 20px 5px 20px;
   font-weight: bold;
 }
-  .content{
+  .page1{
+    grid-area: page1;
+
+
+
 overflow: hidden;
-
-
-background-image: url(../img/1263.jpg);
-  grid-area: main;
+background-image: url(../img/5.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: 100%;
+   background-attachment: fixed;
   animation: change_backg 20s infinite;
   text-align: center;
-  position: relative;
+
+
 
   }
 .prof{
@@ -51,23 +55,30 @@ margin-right: 2%;
 }
   .navbar{
  width: 100%;
-    position: absolute;
+ padding: 15px;
+    position: fixed;
+    background-color: #238ae6;
 
 
     z-index: 10;
   }
-  .pag2{
+  .page21{
+    grid-area: page2;
+
+background-color:  #e2f1f3;
+  }
+  .page2{
+margin-top: 50%;
+    width: 100%;
+    height: 300px;;
     display: flex;
-    position: absolute;
-   background-color: black;
-   height: 25%;
-   width: 100%;
-    top: 50%;
+      background-color: black;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items:center;
     align-content: center;
     opacity: 0.8;
+
 
 
 
@@ -104,16 +115,15 @@ margin-top: 55px;
   color: white;
 }
 .txt{
-  position: absolute;
-  top: 25%;
-  left: 30%;
+
+  margin-top: 20%;
  font-weight: bold;
 font-size: 40px;
 
 }
 
  .buttom{
-  background-color: #238ae6;
+  background-color: #ffc107;
   border-radius: 20px;
   font-size: 18px;
   padding: 10px 24px;
@@ -127,6 +137,7 @@ font-size: 40px;
   .footer-dark
   {
     grid-area: footer;
+
     background-color: green;
   }
   li:hover
@@ -148,6 +159,7 @@ font-size: 40px;
 
 
     .footer-dark {
+      grid-area: footer;
       padding:50px 0;
       color:#f0f9ff;
       background-color:#238ae6;
@@ -241,16 +253,16 @@ font-size: 40px;
 
  0%{
 
-background-image: url(../img/1263.jpg);
+background-image: url(../img/5.jpg);
 }
   30%{
 
-    background-image: url(../img/1.webp);
+    background-image: url(../img/3.jpg);
   }
   60%{
-    background-image: url(../img/learn-36534301920.jpg);}
+    background-image: url(../img/4.jpg);}
     100%{
-      background-image: url(../img/1263.jpg);}
+      background-image: url(../img/5.jpg);}
 }
 
 /* Small */
